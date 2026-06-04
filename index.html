@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B8's Deli &amp; Cafe Ole | Barrie Cafe Demo</title>
+  <meta name="description" content="B8's Deli & Cafe Ole in Barrie, ON. Fresh sandwiches, espresso, soups, and baked goods. Call 249-252-0148.">
+  <style>
+    :root { --bg:#fffaf3; --ink:#1f2937; --accent:#b45309; --soft:#fef3c7; --line:#f3e8d7; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family: "Segoe UI", Arial, sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; }
+    .container { max-width:1050px; margin:0 auto; padding:0 20px; }
+    .topbar { background:#111827; color:#f9fafb; padding:10px 0; font-size:14px; }
+    .topbar a { color:#fde68a; text-decoration:none; font-weight:700; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:18px 0; }
+    .brand { font-size:24px; font-weight:800; color:#7c2d12; }
+    .links a { margin-left:18px; text-decoration:none; color:#374151; font-weight:600; }
+    .hero { padding:56px 0 44px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .hero-grid { display:grid; gap:30px; grid-template-columns:1.1fr .9fr; align-items:center; }
+    .badge { display:inline-block; background:var(--soft); color:#92400e; padding:7px 12px; border-radius:999px; font-size:12px; font-weight:800; letter-spacing:.4px; }
+    h1 { margin-top:14px; font-size:42px; line-height:1.15; }
+    .hero p { margin-top:14px; color:#4b5563; max-width:560px; }
+    .cta { margin-top:24px; display:flex; gap:12px; flex-wrap:wrap; }
+    .btn { display:inline-block; border-radius:8px; padding:12px 18px; font-weight:700; text-decoration:none; }
+    .btn-main { background:var(--accent); color:#fff; }
+    .btn-alt { border:2px solid #d1d5db; color:#1f2937; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:18px; box-shadow:0 8px 22px rgba(17,24,39,.06); }
+    .menu { padding:52px 0; }
+    .menu h2, .about h2, .contact h2 { font-size:30px; margin-bottom:14px; }
+    .menu-grid { display:grid; gap:16px; grid-template-columns:repeat(3,1fr); }
+    .item h3 { font-size:20px; margin-bottom:4px; color:#7c2d12; }
+    .item p { color:#4b5563; font-size:15px; }
+    .about { background:#fff; padding:52px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .about p { max-width:780px; color:#4b5563; }
+    .contact { padding:52px 0 60px; }
+    .contact-grid { display:grid; gap:16px; grid-template-columns:repeat(3,1fr); }
+    .label { font-size:12px; text-transform:uppercase; letter-spacing:.5px; color:#6b7280; margin-bottom:4px; }
+    footer { background:#111827; color:#d1d5db; text-align:center; padding:20px; font-size:14px; }
+    @media (max-width:850px) {
+      .hero-grid, .menu-grid, .contact-grid { grid-template-columns:1fr; }
+      h1 { font-size:34px; }
+      .links { display:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">Call now: <a href="tel:+12492520148">(249) 252-0148</a> &nbsp;|&nbsp; Barrie, Ontario</div>
+  </div>
+
+  <div class="container">
+    <nav>
+      <div class="brand">B8's Deli &amp; Cafe Ole</div>
+      <div class="links">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">Fresh Deli + Espresso</span>
+        <h1>Comfort food and great coffee, right here in Barrie.</h1>
+        <p>From morning espresso and breakfast wraps to stacked deli sandwiches and homemade soups, B8's Deli &amp; Cafe Ole is your local stop for quality food made fresh daily.</p>
+        <div class="cta">
+          <a class="btn btn-main" href="tel:+12492520148">Call to Order</a>
+          <a class="btn btn-alt" href="#menu">View Popular Items</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:8px;color:#7c2d12;">Today's Highlights</h3>
+        <p>- House roast beef sandwich</p>
+        <p>- Chicken soup with fresh bread</p>
+        <p>- Cappuccino + pastry combo</p>
+        <p>- Vegetarian panini specials</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2>Popular Menu</h2>
+      <div class="menu-grid">
+        <div class="card item">
+          <h3>Breakfast &amp; Coffee</h3>
+          <p>Espresso, cappuccino, lattes, breakfast sandwiches, and fresh-baked muffins to start your day.</p>
+        </div>
+        <div class="card item">
+          <h3>Deli Sandwiches</h3>
+          <p>Turkey club, roast beef, tuna melt, and custom deli sandwiches on your choice of bread.</p>
+        </div>
+        <div class="card item">
+          <h3>Lunch Combos</h3>
+          <p>Daily soups, paninis, salads, and combo meals designed for quick pickup and great value.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About B8's</h2>
+      <p>B8's Deli &amp; Cafe Ole is focused on warm service, fresh ingredients, and local community. This demo website shows how your business can present menu highlights, hours, and contact information in a professional way that helps new customers discover you online.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact &amp; Hours</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <div class="label">Phone</div>
+          <div><a href="tel:+12492520148" style="color:#92400e;font-weight:800;text-decoration:none;">(249) 252-0148</a></div>
+        </div>
+        <div class="card">
+          <div class="label">Location</div>
+          <div>Barrie, ON</div>
+        </div>
+        <div class="card">
+          <div class="label">Hours</div>
+          <div>Mon-Sat: 7:00 AM - 6:00 PM<br>Sun: 8:00 AM - 3:00 PM</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>Demo site for lead outreach - B8's Deli &amp; Cafe Ole - Barrie, ON</div>
+  </footer>
+</body>
+</html>
