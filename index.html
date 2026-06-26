@@ -41,7 +41,23 @@
       h1 { font-size:34px; }
       .links { display:none; }
     }
-  </style>
+  /* responsive */
+@media(max-width:768px){
+  .hero-grid,.menu-grid,.footer-grid,.about-grid{grid-template-columns:1fr!important}
+  .hero{padding:36px 0!important;min-height:auto!important}
+  h1{font-size:28px!important}
+  nav{flex-wrap:wrap;gap:12px}
+  .links a{margin-left:0;margin-right:12px;font-size:13px}
+  .cta{flex-direction:column}
+  .btn{width:100%;text-align:center}
+}
+@media(max-width:480px){
+  .section{padding:36px 16px!important}
+  .container{padding:0 14px}
+  h1{font-size:24px!important}
+  h2{font-size:22px!important}
+}
+</style>
 </head>
 <body>
   <div class="topbar">
@@ -71,6 +87,7 @@
         </div>
       </div>
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="B8's Deli & Cafe interior" style="width:100%;border-radius:8px;margin-bottom:12px;" loading="lazy">
         <h3 style="margin-bottom:8px;color:#7c2d12;">Today's Highlights</h3>
         <p>- House roast beef sandwich</p>
         <p>- Chicken soup with fresh bread</p>
@@ -104,6 +121,7 @@
     <div class="container">
       <h2>About B8's</h2>
       <p>B8's Deli &amp; Cafe Ole is focused on warm service, fresh ingredients, and local community. This demo website shows how your business can present menu highlights, hours, and contact information in a professional way that helps new customers discover you online.</p>
+      <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=700&q=80" alt="Coffee and pastries at B8's" style="width:100%;max-width:600px;border-radius:12px;margin-top:20px;display:block;margin-left:auto;margin-right:auto;" loading="lazy">
     </div>
   </section>
 
